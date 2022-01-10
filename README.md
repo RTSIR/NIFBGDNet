@@ -57,3 +57,8 @@ This will save the 'MFEBDN_Color.h5' file of in the folder 'Pretrained_models/'.
 # MFEBDN color image denoising comparison
 ![MFEBDN_Color_Denoising_Comparison](https://user-images.githubusercontent.com/89151608/148807881-faf501ee-4699-4978-a2df-0ef046e9c1a6.png)
 
+# MFEBDN ablation study
+![MFEBDN_Ablation_Study](https://user-images.githubusercontent.com/89151608/148814752-6027041e-cc6a-411e-a1b2-5aed5fb33508.png)
+
+# MFEBDN model size comparison with other blind denoising networks
+![MFEBDN_Model_Size_Comparison](https://user-images.githubusercontent.com/89151608/148814995-1d49c393-9039-4a85-961d-4a722f496600.png)
