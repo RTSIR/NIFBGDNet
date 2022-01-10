@@ -121,4 +121,4 @@ model.fit_generator(myFlow(aug,cleanImages),
 epochs=config.epochs,steps_per_epoch=len(cleanImages)//config.batch_size,callbacks=callbacks,verbose=1)
 
 # save the model
-model.save('MFEBDN_Gray.h5')
+model.save('./Pretrained_models/MFEBDN_Gray.h5')
