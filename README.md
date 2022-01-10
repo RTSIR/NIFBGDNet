@@ -6,13 +6,13 @@ This repo contains the KERAS implementation of "Blind Gaussian Deep Denoiser Net
 
 To test for blind Gray denoising using MFEBDN write:
 
-python Test_Gray.py
+python Test_gray.py
 
 The resultant images will be stored in 'Test_Results/Gray/'
 
 To test for blind Color denoising using MFEBDN write:
 
-python Test_Color.py
+python Test_color.py
 
 The resultant images will be stored in 'Test_Results/Color/'
 
