@@ -47,3 +47,13 @@ Then run the MFEBDN_Color model file using:
 python MFEBDN_Color.py
 
 This will save the 'MFEBDN_Color.h5' file of in the folder 'Pretrained_models/'.
+
+# MFEBDN architecture image
+![MFEBDN_Architecture](https://user-images.githubusercontent.com/89151608/148807575-b518568c-0079-4e6b-ac8b-29c01972e40e.png)
+
+# MFEBDN gray image denoising comparison
+![MFEBDN_Gray_Denoising_Comparison](https://user-images.githubusercontent.com/89151608/148807795-c09c5b4c-5476-4f08-b27e-2c40d95bf035.png)
+
+# MFEBDN color image denoising comparison
+![MFEBDN_Color_Denoising_Comparison](https://user-images.githubusercontent.com/89151608/148807881-faf501ee-4699-4978-a2df-0ef046e9c1a6.png)
+
