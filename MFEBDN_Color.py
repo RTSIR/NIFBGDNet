@@ -14,69 +14,69 @@ from utils import *
 # create CNN model
 input_img=Input(shape=(None,None,3))
 x=Activation('relu')(input_img)
-x1=Conv2D(64,(3,3),dilation_rate=1,padding="same")(x)
+x1=Conv2D(32,(3,3),dilation_rate=1,padding="same")(x)
 
 x=Activation('relu')(x1)
-x=Conv2D(64,(3,3),dilation_rate=2,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=2,padding="same")(x)
 
 x=Activation('relu')(x)
-x=Conv2D(64,(3,3),dilation_rate=3,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=3,padding="same")(x)
 
 x=Activation('relu')(x)
-x=Conv2D(64,(3,3),dilation_rate=4,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=4,padding="same")(x)
 
 x=Activation('relu')(x)
-x11=Conv2D(64,(3,3),dilation_rate=5,padding="same")(x)
+x11=Conv2D(32,(3,3),dilation_rate=5,padding="same")(x)
 
-x12=Conv2DTranspose(64,(3,3),strides=2)(x11)
-x=Conv2D(64,(3,3),strides=2)(x12)
+x12=Conv2DTranspose(32,(3,3),strides=2)(x11)
+x=Conv2D(32,(3,3),strides=2)(x12)
 x = Subtract()([x11, x])
-x=Conv2DTranspose(64,(3,3),strides=2)(x)
+x=Conv2DTranspose(32,(3,3),strides=2)(x)
 x13 = Add()([x12, x])
 
 x=Activation('relu')(x13)
-x13=Conv2D(64,(3,3),padding="same")(x)
+x13=Conv2D(32,(3,3),padding="same")(x)
 
-x14=Conv2D(64,(3,3),strides=2)(x13)
-x=Conv2DTranspose(64,(3,3),strides=2)(x14)
+x14=Conv2D(32,(3,3),strides=2)(x13)
+x=Conv2DTranspose(32,(3,3),strides=2)(x14)
 x = Subtract()([x13, x])
-x=Conv2D(64,(3,3),strides=2)(x)
+x=Conv2D(32,(3,3),strides=2)(x)
 x_upper = Add()([x14, x])
 
 x_joint1= Concatenate()([x11,x_upper])
-x_joint1= Conv2D(64,(3,3),padding="same")(x_joint1)
+x_joint1= Conv2D(32,(3,3),padding="same")(x_joint1)
 
-x12=Conv2DTranspose(64,(3,3),strides=2)(x_joint1)
-x=Conv2D(64,(3,3),strides=2)(x12)
+x12=Conv2DTranspose(32,(3,3),strides=2)(x_joint1)
+x=Conv2D(32,(3,3),strides=2)(x12)
 x = Subtract()([x_joint1, x])
-x=Conv2DTranspose(64,(3,3),strides=2)(x)
+x=Conv2DTranspose(32,(3,3),strides=2)(x)
 x13 = Add()([x12, x])
 
 x=Activation('relu')(x13)
-x13=Conv2D(64,(3,3),padding="same")(x)
+x13=Conv2D(32,(3,3),padding="same")(x)
 
-x14=Conv2D(64,(3,3),strides=2)(x13)
-x=Conv2DTranspose(64,(3,3),strides=2)(x14)
+x14=Conv2D(32,(3,3),strides=2)(x13)
+x=Conv2DTranspose(32,(3,3),strides=2)(x14)
 x = Subtract()([x13, x])
-x=Conv2D(64,(3,3),strides=2)(x)
+x=Conv2D(32,(3,3),strides=2)(x)
 x_upper = Add()([x14, x])
 
 x_joint2= Concatenate()([x_joint1,x_upper])
 
 x=Activation('relu')(x_joint2)
-x=Conv2D(64,(3,3),dilation_rate=5,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=5,padding="same")(x)
 
 x=Activation('relu')(x)
-x=Conv2D(64,(3,3),dilation_rate=4,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=4,padding="same")(x)
 
 x=Activation('relu')(x)
-x=Conv2D(64,(3,3),dilation_rate=3,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=3,padding="same")(x)
 
 x=Activation('relu')(x)
-x=Conv2D(64,(3,3),dilation_rate=2,padding="same")(x)
+x=Conv2D(32,(3,3),dilation_rate=2,padding="same")(x)
 
 x=Activation('relu')(x)
-x2=Conv2D(64,(3,3),dilation_rate=1,padding="same")(x)
+x2=Conv2D(32,(3,3),dilation_rate=1,padding="same")(x)
 
 x3 = Subtract()([x2, x1])
 
@@ -123,4 +123,4 @@ model.fit_generator(myFlow(aug,cleanImages),
 epochs=config.epochs,steps_per_epoch=len(cleanImages)//config.batch_size,callbacks=callbacks,verbose=1)
 
 # save the model
-model.save('MFEBDN_Color.h5')
+model.save('./Pretrained_models/MFEBDN_Color.h5')
