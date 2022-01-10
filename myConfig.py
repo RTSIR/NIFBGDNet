@@ -2,7 +2,7 @@
 import os
 
 #default number of epochs
-epochs=30
+epochs=20
 
 #default batch size for training
 batch_size=32
@@ -11,7 +11,7 @@ batch_size=32
 sigma=25.0  #change it according to noise level in your dataset
 
 #path to generate the data
-genDataPath='./data/CBSD432/'
+genDataPath='./data/'
 
 #path to save the genPatches
 save_dir='./data/'
