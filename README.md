@@ -31,7 +31,7 @@ Then run the MFEBDN_Gray model file using:
 
 python MFEBDN_Gray.py
 
-This will save the 'MFEBDN_Gray.h5' file of in the folder 'Pretrained_Models/'.
+This will save the 'MFEBDN_Gray.h5' file of in the folder 'Pretrained_models/'.
 
 
 # Train MFEBDN color denoising network
@@ -46,4 +46,4 @@ Then run the MFEBDN_Color model file using:
 
 python MFEBDN_Color.py
 
-This will save the 'MFEBDN_Color.h5' file of in the folder 'Pretrained_Models/'.
+This will save the 'MFEBDN_Color.h5' file of in the folder 'Pretrained_models/'.
