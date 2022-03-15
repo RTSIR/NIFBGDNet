@@ -20,7 +20,9 @@ Image wise PSNR & SSIM as well as Average PSNR & Average SSIM for the whole imag
 
 # NIFBGDNet architecture image
 ![image](https://user-images.githubusercontent.com/89151608/158437632-58c4ee5c-153f-4799-b16d-e60019cbd028.png)
-![image](https://user-images.githubusercontent.com/89151608/158437766-f36b799d-12df-40ab-8c75-d2c29dc859d9.png)
+
+![image](https://user-images.githubusercontent.com/89151608/158442819-86c2185b-963d-480e-aace-c6e7ba9fb5d4.png)
+
 
 # NIFBGDNet gray image denoising comparison
 ![image](https://user-images.githubusercontent.com/89151608/158437994-34fd5924-4ba8-4aad-b0d8-561a9217b119.png)
