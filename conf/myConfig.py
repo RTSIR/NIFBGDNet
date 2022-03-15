@@ -2,7 +2,7 @@
 import os
 
 #default number of epochs
-epochs=20
+epochs=40
 
 #default batch size for training
 batch_size=32
