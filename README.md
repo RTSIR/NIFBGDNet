@@ -19,16 +19,11 @@ The resultant images will be stored in 'Test_Results/Color/'
 Image wise PSNR & SSIM as well as Average PSNR & Average SSIM for the whole image database is also displayed in the console as output.
 
 # NIFBGDNet architecture image
-![MFEBDN_Architecture](https://user-images.githubusercontent.com/89151608/148807575-b518568c-0079-4e6b-ac8b-29c01972e40e.png)
+![image](https://user-images.githubusercontent.com/89151608/158437632-58c4ee5c-153f-4799-b16d-e60019cbd028.png)
+![image](https://user-images.githubusercontent.com/89151608/158437766-f36b799d-12df-40ab-8c75-d2c29dc859d9.png)
 
 # NIFBGDNet gray image denoising comparison
-![MFEBDN_Gray_Denoising_Comparison](https://user-images.githubusercontent.com/89151608/148807795-c09c5b4c-5476-4f08-b27e-2c40d95bf035.png)
+![image](https://user-images.githubusercontent.com/89151608/158437994-34fd5924-4ba8-4aad-b0d8-561a9217b119.png)
 
 # NIFBGDNet color image denoising comparison
-![MFEBDN_Color_Denoising_Comparison](https://user-images.githubusercontent.com/89151608/148807881-faf501ee-4699-4978-a2df-0ef046e9c1a6.png)
-
-# NIFBGDNet ablation study
-![MFEBDN_Ablation_Study](https://user-images.githubusercontent.com/89151608/148814752-6027041e-cc6a-411e-a1b2-5aed5fb33508.png)
-
-# NIFBGDNet model size comparison with other blind denoising networks
-![MFEBDN_Model_Size_Comparison](https://user-images.githubusercontent.com/89151608/148814995-1d49c393-9039-4a85-961d-4a722f496600.png)
+![image](https://user-images.githubusercontent.com/89151608/158438118-973312e0-70f0-4113-b74b-f15906a7a117.png)
