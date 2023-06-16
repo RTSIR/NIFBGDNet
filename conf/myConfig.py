@@ -11,7 +11,7 @@ batch_size=32
 sigma=25.0  #change it according to noise level in your dataset
 
 #path to generate the data
-genDataPath='./genData/'
+genDataPath='./BSD400/'
 
 #path to save the genPatches
 save_dir='./trainingPatch/'
